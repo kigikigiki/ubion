@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--유저가 입력할 수 있는 공간-->
+    <!--action : 유저가 입력한 데이터를 어느 주소로 보내줄 것인가?
+        method : 데이터를 보내는 방식 (get / post)-->
+    <form action="/login" method="get">
+        <!--유저가 데이터를 입력하는 태그 생성-->
+        <input type="text" name="input_id">
+        <!--<br> : 줄바꿈 태그-->
+        <br>
+        <input type="password" name="input_password">
+        <br>
+        <!--데이터가 입력이 되었으면 제출을 하는 버튼 생성-->
+        <input type="submit">
+        <!--
+            유저가 보내는 데이터의 형태
+            {
+                'input_id' : user가 입력한 id,
+                '_password' : user가 입력한 password
+            }
+        -->
+    </form>
+    <form action="/login2" method="post">
+        <!--유저가 데이터를 입력하는 태그 생성-->
+        <input type="text" name="input_id">
+        <!--<br> : 줄바꿈 태그-->
+        <br>
+        <input type="password" name="input_password">
+        <br>
+        <!--데이터가 입력이 되었으면 제출을 하는 버튼 생성-->
+        <input type="submit">
+        <!--
+            유저가 보내는 데이터의 형태
+            {
+                'input_id' : user가 입력한 id,
+                '_password' : user가 입력한 password
+            }
+        -->
+    </form>
+</body>
+</html>
